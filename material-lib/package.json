@@ -1,0 +1,38 @@
+{
+  "name": "@your-org/material-lib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production && tsc --emitDeclarationOnly",
+    "prepare": "npm run build",
+    "publish": "npm publish --access public"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "ts-loader": "^9.5.1",
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "postcss": "^8.4.35",
+    "postcss-loader": "^8.1.0",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+} 
